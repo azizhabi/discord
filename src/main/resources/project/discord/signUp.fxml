@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="528.0" prefWidth="432.0" style="-fx-background-color: #23272A;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.discord.signUpController">
+   <children>
+      <Label layoutX="114.0" layoutY="13.0" prefHeight="52.0" prefWidth="254.0" text="Create an account" textFill="#cdc4c4">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <TextField fx:id="username" layoutX="35.0" layoutY="184.0" prefHeight="40.0" prefWidth="363.0" style="-fx-background-color: #cdc4c4;">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="password" layoutX="35.0" layoutY="265.0" prefHeight="40.0" prefWidth="363.0" style="-fx-background-color: #cdc4c4;">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="email" layoutX="35.0" layoutY="103.0" prefHeight="40.0" prefWidth="363.0" style="-fx-background-color: #cdc4c4;">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Label layoutX="40.0" layoutY="81.0" prefHeight="17.0" prefWidth="83.0" text="EMAIL" textFill="#cdc4c4f0" />
+      <Label layoutX="40.0" layoutY="162.0" prefHeight="17.0" prefWidth="100.0" text="USERNAME" textFill="#cdc4c4" />
+      <Label layoutX="39.0" layoutY="243.0" text="PASSWORD" textFill="#cdc4c4" />
+      <ComboBox fx:id="month" layoutX="36.0" layoutY="354.0" prefHeight="40.0" prefWidth="109.0" promptText="MONTH" />
+      <Label layoutX="40.0" layoutY="327.0" text="Date of birth" textFill="#cdc4c4">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="day" layoutX="162.0" layoutY="354.0" prefHeight="40.0" prefWidth="109.0" promptText="DAY" />
+      <ComboBox fx:id="year" layoutX="289.0" layoutY="354.0" prefHeight="40.0" prefWidth="109.0" promptText="YEAR" />
+      <Button fx:id="signUp" layoutX="38.0" layoutY="421.0" mnemonicParsing="false" onAction="#onSignupButtonCLick" prefHeight="45.0" prefWidth="363.0" style="-fx-background-color: #0070f8;" text="Signup" textFill="#cdc4c4">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Hyperlink fx:id="login" layoutX="178.0" layoutY="474.0" onAction="#onLoginLinkClick" text="Login">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Hyperlink>
+      <Label layoutX="39.0" layoutY="477.0" prefHeight="20.0" prefWidth="150.0" text="Already have account?" textFill="#948888">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelEmail" layoutX="100.0" layoutY="81.0" prefHeight="17.0" prefWidth="290.0" text="The email is required" textFill="RED" />
+      <Label fx:id="labelUsername" layoutX="110.0" layoutY="164.0" prefHeight="17.0" prefWidth="290.0" text="The username is required" textFill="#da1f1f" />
+      <Label fx:id="labelPassword" layoutX="110.0" layoutY="244.0" prefHeight="17.0" prefWidth="290.0" text="The password is required" textFill="#dd1919" />
+   </children>
+</AnchorPane>

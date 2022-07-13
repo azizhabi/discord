@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+
+<AnchorPane prefHeight="279.0" prefWidth="529.0" style="-fx-background-color: #36393F;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.discord.ProfilepageController">
+   <children>
+      <Circle fill="DODGERBLUE" layoutX="86.0" layoutY="76.0" radius="62.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label fx:id="username" layoutX="160.0" layoutY="99.0" prefHeight="44.0" prefWidth="216.0" textFill="WHITE" />
+      <Label layoutX="24.0" layoutY="178.0" prefHeight="44.0" prefWidth="216.0" text="Email" textFill="WHITE" />
+      <Label layoutX="24.0" layoutY="222.0" prefHeight="44.0" prefWidth="216.0" text="PhoneNumebr" textFill="#f8f5f5" />
+      <Label fx:id="email" layoutX="283.0" layoutY="222.0" prefHeight="44.0" prefWidth="216.0" textFill="WHITE" />
+      <Label fx:id="phonenumber" layoutX="283.0" layoutY="185.0" prefHeight="44.0" prefWidth="216.0" textFill="WHITE" />
+   </children>
+</AnchorPane>

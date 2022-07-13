@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="93.0" prefWidth="733.0" style="-fx-background-image: #36393F;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.discord.massageController">
+   <children>
+      <AnchorPane prefHeight="93.0" prefWidth="760.0" style="-fx-background-color: #36393F;">
+         <children>
+            <Circle fx:id="circle" fill="#726b6b" layoutX="45.0" layoutY="40.0" radius="27.0" stroke="#8a8484" strokeType="INSIDE" />
+            <Label fx:id="username" layoutX="87.0" layoutY="27.0" prefHeight="30.0" prefWidth="137.0" textFill="#ebe2e2">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="massage" layoutX="245.0" layoutY="21.0" prefHeight="38.0" prefWidth="499.0" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

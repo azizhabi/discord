@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+
+
+<AnchorPane prefHeight="87.0" prefWidth="439.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.discord.userController">
+   <children>
+      <Circle fx:id="photo" fill="#dbe0e4" layoutX="48.0" layoutY="44.0" radius="34.0" stroke="#cdc5c5" strokeType="INSIDE" />
+      <Label fx:id="name" layoutX="108.0" layoutY="14.0" prefHeight="23.0" prefWidth="133.0" style="-fx-background-color: #cdc5c5;" />
+      <Label fx:id="lname" layoutX="107.0" layoutY="46.0" prefHeight="23.0" prefWidth="133.0" style="-fx-background-color: #cdc5c5;" />
+   </children>
+</AnchorPane>

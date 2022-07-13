@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.ExpansionPanel?>
+<?import com.gluonhq.charm.glisten.control.ExpansionPanel.CollapsedPanel?>
+<?import com.gluonhq.charm.glisten.control.ExpansionPanelContainer?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<fx:root fx:id="members" prefHeight="636.0" prefWidth="782.0" style="-fx-background-color: #36393F;" type="AnchorPane" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.discord.ServerpageController">
+   <children>
+      <ScrollPane prefHeight="638.0" prefWidth="214.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="637.0" prefWidth="200.0" style="-fx-background-color: #36393F;">
+               <children>
+                  <ExpansionPanelContainer layoutX="-97.0" layoutY="-1.0" prefHeight="653.0" prefWidth="298.0" style="-fx-background-color: #36393F;">
+                      <items>
+                          <ExpansionPanel>
+                              <collapsedContent>
+                                  <ExpansionPanel.CollapsedPanel fx:id="members" style="-fx-background-color: #36393F;">
+                                      <titleNodes>
+                                          <Label />
+                                          <Label fx:id="members" prefHeight="18.0" prefWidth="76.0" style="-fx-background-color: #36393F;" text="Members" textFill="WHITE" />
+                                      </titleNodes>
+                                  </ExpansionPanel.CollapsedPanel>
+                              </collapsedContent>
+                          </ExpansionPanel>
+                          <ExpansionPanel>
+                              <collapsedContent>
+                                  <ExpansionPanel.CollapsedPanel prefWidth="278.0" style="-fx-background-color: #36393F;">
+                                      <titleNodes>
+                                          <Label prefHeight="18.0" prefWidth="12.0" />
+                                          <Label fx:id="groups" prefHeight="18.0" prefWidth="136.0" style="-fx-background-color: #36393F;" text="Groups" />
+                                      </titleNodes>
+                                  </ExpansionPanel.CollapsedPanel>
+                              </collapsedContent>
+                          </ExpansionPanel>
+                      </items>
+                  </ExpansionPanelContainer>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <Label fx:id="role" layoutX="221.0" layoutY="5.0" prefHeight="34.0" prefWidth="100.0" text="Label" textFill="WHITE" />
+   </children>
+</fx:root>

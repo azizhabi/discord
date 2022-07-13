@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="713.0" prefWidth="798.0" style="-fx-background-color: #36393F;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.discord.friendsController">
+   <children>
+      <ImageView fitHeight="38.0" fitWidth="32.0" layoutX="6.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../pics/cartoon1.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="45.0" layoutY="6.0" prefHeight="23.0" prefWidth="74.0" text="Friends" textFill="#eee8e8">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Line endX="-100.0" endY="22.0" layoutX="219.0" layoutY="8.0" startX="-100.0" stroke="#b5b4b4" />
+      <Label fx:id="online" layoutX="141.0" layoutY="5.0" onMouseClicked="#onOnlineClick" prefHeight="28.0" prefWidth="68.0" style="-fx-cursor: hand;" text=" Online" textFill="#eee8e8">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="all" layoutX="225.0" layoutY="5.0" onMouseClicked="#onAllClick" prefHeight="28.0" prefWidth="46.0" style="-fx-cursor: hand;" text="  All" textFill="#eee8e8">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="pending" layoutX="285.0" layoutY="5.0" onMouseClicked="#onPendingClick" prefHeight="28.0" prefWidth="82.0" style="-fx-cursor: hand;" text=" Pending" textFill="#eee8e8">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="blocked" layoutX="382.0" layoutY="5.0" onMouseClicked="#onBlockedClick" prefHeight="28.0" prefWidth="82.0" style="-fx-cursor: hand;" text=" Blocked" textFill="#eee8e8">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="mainPane" layoutX="1.0" layoutY="54.0" prefHeight="656.0" prefWidth="783.0" />
+      <Line endX="100.0" endY="-96.0" layoutX="691.0" layoutY="96.0" startX="100.0" startY="617.0" stroke="#8d8686" />
+      <Label fx:id="addFriend" layoutX="483.0" layoutY="5.0" onMouseClicked="#onAddFriendButtonClick" prefHeight="28.0" prefWidth="93.0" style="-fx-background-color: #3BA55D; -fx-cursor: hand;" text="   Add Friend" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

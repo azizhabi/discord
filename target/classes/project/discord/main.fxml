@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="715.0" prefWidth="1366.0" style="-fx-background-color: #23272A;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.discord.mainController">
+   <children>
+      <ScrollPane fx:id="scroll" layoutX="71.0" layoutY="141.0" prefHeight="523.0" prefWidth="200.0" style="-fx-background-color: #343638;">
+         <content>
+            <AnchorPane prefHeight="522.0" prefWidth="195.0" style="-fx-background-color: #2F3136;">
+               <children>
+                  <GridPane fx:id="grid" layoutX="14.0" layoutY="9.0" prefHeight="4.0" prefWidth="100.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <Pane layoutX="70.0" layoutY="665.0" prefHeight="49.0" prefWidth="200.0" style="-fx-background-color: #2F3136;">
+         <children>
+            <Label fx:id="labelUsername" layoutX="43.0" layoutY="9.0" prefHeight="19.0" prefWidth="110.0" textFill="#f2eeee">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="44.0" layoutY="28.0" prefHeight="17.0" prefWidth="110.0" text="#6026" textFill="#b2aeae" />
+            <ImageView fx:id="setting" fitHeight="37.0" fitWidth="35.0" layoutX="164.0" layoutY="3.0" onMouseClicked="#onSettingButtonClick" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+               <image>
+                  <Image url="@../../../../pics/setting.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="profileBtn" fitHeight="37.0" fitWidth="42.0" layoutX="7.0" layoutY="7.0" onMouseClicked="#onProfileClick" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+               <image>
+                  <Image url="@../../../../pics/discordOnline.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="70.0" layoutY="1.0" prefHeight="143.0" prefWidth="200.0" style="-fx-background-color: #2F3136;">
+         <children>
+            <Label layoutX="7.0" layoutY="113.0" prefHeight="25.0" prefWidth="141.0" text="DIRECT MESSAGE" textFill="#cdc4c4">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="add" layoutX="172.0" layoutY="107.0" onMouseClicked="#onAddClick" prefHeight="25.0" prefWidth="20.0" style="-fx-cursor: hand;" text="+" textFill="#cdc4c4">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Pane layoutX="6.0" layoutY="55.0" onMouseClicked="#onFriendsClick" prefHeight="46.0" prefWidth="187.0" style="-fx-background-color: #42464D; -fx-cursor: hand;">
+               <children>
+                  <ImageView fitHeight="37.0" fitWidth="34.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../pics/cartoon.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="44.0" layoutY="8.0" prefHeight="25.0" prefWidth="76.0" text="FRIENDS" textFill="#fcfafa">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Label blendMode="SRC_ATOP" layoutX="7.0" layoutY="8.0" onMouseClicked="#onConversationClick" prefHeight="37.0" prefWidth="187.0" style="-fx-background-color: #23272A; -fx-cursor: hand;" text=" Find or start a conversation" textFill="#b5a6a6">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <AnchorPane fx:id="mainPane" layoutX="271.0" layoutY="1.0" prefHeight="713.0" prefWidth="798.0" style="-fx-background-color: #36393F;" />
+      <Line endX="1059.5" endY="44.29289245605469" layoutY="6.0" startX="-1.52587890625E-5" startY="44.29289245605469" stroke="#8d8686" />
+      <Label fx:id="profile" layoutX="4.0" layoutY="5.0" onMouseClicked="#onProfileClick" prefHeight="46.0" prefWidth="67.0" text="Profile" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

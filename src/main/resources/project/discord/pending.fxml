@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="656.0" prefWidth="783.0" style="-fx-background-color: #36393F;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.discord.pendingController">
+   <children>
+      <TextField fx:id="search" layoutX="51.0" layoutY="32.0" prefHeight="38.0" prefWidth="697.0" promptText="  Search" style="-fx-background-color: #23272A;" styleClass="search" stylesheets="@../../../../css/propmtText.css">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <Label layoutX="51.0" layoutY="95.0" prefHeight="38.0" prefWidth="67.0" text="PENDING-" textFill="#c6b7b7" />
+      <ScrollPane fx:id="scroll" layoutX="26.0" layoutY="145.0" prefHeight="504.0" prefWidth="750.0" style="-fx-background-color: black;">
+         <content>
+            <GridPane fx:id="grid">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+            </GridPane>
+         </content>
+      </ScrollPane>
+      <Label fx:id="pendingCount" layoutX="117.0" layoutY="106.0" prefHeight="17.0" prefWidth="28.0" textFill="#c6b7b7" />
+   </children>
+</AnchorPane>
